@@ -1,0 +1,64 @@
+{
+  "promotions": [
+    {
+      "title": "Promotion 1",
+      "location": "All",
+      "body": "This is a test of the promotion system"
+    },
+    {
+      "title": "Promotion 2",
+      "location": "All",
+      "body": "This is a test of the promotion system"
+    },
+    {
+      "title": "Promotion 3",
+      "location": "All",
+      "body": "This is a test of the promotion system"
+    },
+    {
+      "title": "Promotion 4",
+      "location": "All",
+      "body": "This is a test of the promotion system"
+    },
+    {
+      "title": "Promotion 5",
+      "location": "All",
+      "body": "This is a test of the promotion system"
+    },
+    {
+      "title": "Promotion 6",
+      "location": "All",
+      "body": "This is a test of the promotion system"
+    },
+    {
+      "title": "Promotion 7",
+      "location": "All",
+      "body": "This is a test of the promotion system"
+    },
+    {
+      "title": "Promotion 8",
+      "location": "All",
+      "body": "This is a test of the promotion system"
+    },
+    {
+      "title": "Promotion 9",
+      "location": "All",
+      "body": "This is a test of the promotion system"
+    },
+    {
+      "title": "Promotion 10",
+      "location": "All",
+      "body": "This is a test of the promotion system"
+    },
+    {
+      "title": "Promotion 11",
+      "location": "All",
+      "body": "This is a test of the promotion system"
+    },
+    {
+      "title": "Promotion 12",
+      "location": "All",
+      "body": "This is a test of the promotion system"
+    }
+  ]
+}

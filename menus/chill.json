@@ -1,0 +1,234 @@
+  {
+    "menu" : {
+    "products": [
+      {
+        "name": "Sunny & 55",
+        "group": "Berry Blast",
+        "ingredients": [
+          "Mango",
+          "Strawberry",
+          "Orange Juice",
+          "Greek Yogurt"
+        ],
+        "sizes": [
+          "Small - $3.50",
+          "Large - $4.75"
+        ]
+      },
+      {
+        "name": "Cruising",
+        "group": "Berry Blast",
+        "ingredients": [
+          "Pineapple",
+          "Raspberry",
+          "Apple Juice"
+        ],
+        "sizes": [
+          "Small - $3.50",
+          "Large - $4.75"
+        ]
+      },
+      {
+        "name": "MVP",
+        "group": "Berry Blast",
+        "ingredients": [
+          "Mango",
+          "Pineapple",
+          "Almond Milk"
+        ],
+        "sizes": [
+          "Small - $3.50",
+          "Large - $4.75"
+        ]
+      },
+      {
+        "name": "Berry Blast",
+        "group": "Berry Blast",
+        "ingredients": [
+          "Strawberry",
+          "Raspberry",
+          "Blueberry"
+        ],
+        "sizes": [
+          "Small - $3.50",
+          "Large - $4.75"
+        ]
+      },
+      {
+        "name": "Strawberry Banana",
+        "group": "Berry Blast",
+        "ingredients": [
+          "Strawberry",
+          "Banana",
+          "Almond Milk"
+        ],
+        "sizes": [
+          "Small - $3.50",
+          "Large - $4.75"
+        ]
+      },
+      {
+        "name": "Front Porch",
+        "group": "Immunity Boost",
+        "ingredients": [
+          "Pineapple",
+          "Apple Juice",
+          "Kale"
+        ],
+        "sizes": [
+          "Small - $3.50",
+          "Large - $4.75"
+        ]
+      },
+      {
+        "name": "CT Crunch",
+        "group": "Immunity Boost",
+        "ingredients": [
+          "Cinnamon",
+          "Honey",
+          "Banana",
+          "Granola",
+          "Greek Yogurt"
+        ],
+        "sizes": [
+          "Small - $3.50",
+          "Large - $4.75"
+        ]
+      },
+      {
+        "name": "Main Squeeze",
+        "group": "Immunity Boost",
+        "ingredients": [
+          "Mango",
+          "Pineapple",
+          "Orange Juice",
+          "Spinach",
+          "Banana"
+        ],
+        "sizes": [
+          "Small - $3.50",
+          "Large - $4.75"
+        ]
+      },
+      {
+        "name": "Rudy",
+        "group": "Immunity Boost",
+        "ingredients": [
+          "Blueberry",
+          "Banana",
+          "Spinach",
+          "Orange Juice"
+        ],
+        "sizes": [
+          "Small - $3.50",
+          "Large - $4.75"
+        ]
+      },
+      {
+        "name": "Island Flyer",
+        "group": "Immunity Boost",
+        "ingredients": [
+          "Pineapple",
+          "Apple Juice",
+          "Kale",
+          "Blueberry",
+          "Raspberry"
+        ],
+        "sizes": [
+          "Small - $3.50",
+          "Large - $4.75"
+        ]
+      },
+      {
+        "name": "Archie",
+        "group": "Recovery",
+        "ingredients": [
+          "Banana",
+          "Peanut Butter",
+          "Granola",
+          "Almond Milk"
+        ],
+        "sizes": [
+          "Small - $3.50",
+          "Large - $4.75"
+        ]
+      },
+      {
+        "name": "Power Up",
+        "group": "Recovery",
+        "ingredients": [
+          "Banana",
+          "Peanut Butter",
+          "Chocolate Silk",
+          "Chocolate Chips"
+        ],
+        "sizes": [
+          "Small - $3.50",
+          "Large - $4.75"
+        ]
+      },
+      {
+        "name": "Marathon",
+        "group": "Recovery",
+        "ingredients": [
+          "Blueberry",
+          "Banana",
+          "Granola",
+          "Almond Milk"
+        ],
+        "sizes": [
+          "Small - $3.50",
+          "Large - $4.75"
+        ]
+      },
+      {
+        "name": "PB + J",
+        "group": "Recovery",
+        "ingredients": [
+          "Choice of Berries",
+          "Granola",
+          "Peanut Butter",
+          "Almond Milk"
+        ],
+        "sizes": [
+          "Small - $3.50",
+          "Large - $4.75"
+        ]
+      },
+      {
+        "name": "Create Your Own",
+        "ingredients": [
+          "Choose 1",
+          "Orange Juice",
+          "Lemonade",
+          "Apple Juice",
+          "Almond Milk",
+          "Greek Yogurt",
+          "",
+          "Choose 2",
+          "Raspberry",
+          "Blueberry",
+          "Strawberry",
+          "Pineapple",
+          "Mango",
+          "Banana",
+          "",
+          "Choose 1 Veggie",
+          "Kale",
+          "Spinach",
+          "",
+          "Add Ons",
+          "Vanilla or Chocolate Protein",
+          "Half Scoop - $1.50",
+          "Full Scoop - $.75",
+          "Peanut Butter - $.75",
+          "Greek Yogurt - $1.00"
+        ],
+        "sizes": [
+          "Small - $3.65",
+          "Large - $4.95"
+        ]
+      }
+    ]
+  }
+}
