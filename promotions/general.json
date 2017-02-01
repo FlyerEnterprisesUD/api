@@ -1,64 +1,46 @@
 {
   "promotions": [
     {
-      "title": "Promotion 1",
+      "image": "http://i1.wp.com/flyerenterprises.com/wp-content/uploads/2016/01/IMG_2516.jpg?zoom=2&resize=1180%2C300",
+      "title": "Comment",
       "location": "All",
-      "body": "This is a test of the promotion system"
+      "body": "THis is a full story"
     },
     {
-      "title": "Promotion 2",
+      "image": "http://i1.wp.com/flyerenterprises.com/wp-content/uploads/2016/03/Copy-of-IMG_2429.jpg?zoom=2&resize=1180%2C300",
+      "title": "Comment 2",
       "location": "All",
-      "body": "This is a test of the promotion system"
+      "body": "THis is a full story"
     },
     {
-      "title": "Promotion 3",
+      "image": "http://i0.wp.com/flyerenterprises.com/wp-content/uploads/2016/03/Copy-of-IMG_2389.jpg?zoom=2&resize=1180%2C300",
+      "title": "Comment 3",
       "location": "All",
-      "body": "This is a test of the promotion system"
+      "body": "THis is a full story"
     },
     {
-      "title": "Promotion 4",
+      "image": "http://i0.wp.com/flyerenterprises.com/wp-content/uploads/2016/03/IMG_2555-1.jpg?zoom=2&resize=1180%2C300",
+      "title": "Comment 4",
       "location": "All",
-      "body": "This is a test of the promotion system"
+      "body": "THis is a full story"
     },
     {
-      "title": "Promotion 5",
+      "image": "http://i2.wp.com/flyerenterprises.com/wp-content/uploads/2016/03/IMG_2504.jpg?zoom=2&resize=1180%2C300",
+      "title": "Comment 5",
       "location": "All",
-      "body": "This is a test of the promotion system"
+      "body": "THis is a full story"
     },
     {
-      "title": "Promotion 6",
+      "image": "http://i1.wp.com/flyerenterprises.com/wp-content/uploads/2016/03/IMG_2611.jpg?zoom=2&resize=1180%2C300",
+      "title": "Comment 6",
       "location": "All",
-      "body": "This is a test of the promotion system"
+      "body": "THis is a full story"
     },
     {
-      "title": "Promotion 7",
+      "image": "http://i2.wp.com/flyerenterprises.com/wp-content/uploads/2016/01/IMG_2450.jpg?zoom=2&resize=1180%2C300",
+      "title": "Comment 7",
       "location": "All",
-      "body": "This is a test of the promotion system"
-    },
-    {
-      "title": "Promotion 8",
-      "location": "All",
-      "body": "This is a test of the promotion system"
-    },
-    {
-      "title": "Promotion 9",
-      "location": "All",
-      "body": "This is a test of the promotion system"
-    },
-    {
-      "title": "Promotion 10",
-      "location": "All",
-      "body": "This is a test of the promotion system"
-    },
-    {
-      "title": "Promotion 11",
-      "location": "All",
-      "body": "This is a test of the promotion system"
-    },
-    {
-      "title": "Promotion 12",
-      "location": "All",
-      "body": "This is a test of the promotion system"
+      "body": "THis is a full story"
     }
   ]
 }
