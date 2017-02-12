@@ -1,23 +1,31 @@
 {
-  "name": "api",
-  "version": "1.0.0",
-  "description": "Flyer Enterprises API",
-  "main": "server.js",
+  "name": "node-js-getting-started",
+  "version": "0.2.5",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.16.1",
+    "ejs": "2.4.1",
+    "express": "4.13.3",
+    "jsonwebtoken": "^7.2.1",
+    "mysql": "^2.13.0",
+    "sequelize": "^3.30.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FlyerEnterprisesUD/api.git"
+    "url": "https://github.com/heroku/node-js-getting-started"
   },
-  "author": "Flyer Enterprises",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/FlyerEnterprisesUD/api/issues"
-  },
-  "homepage": "https://github.com/FlyerEnterprisesUD/api#readme",
-  "dependencies": {
-    "body-parser": "^1.16.0",
-    "express": "^4.14.0"
-  }
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
