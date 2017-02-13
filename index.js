@@ -3,7 +3,7 @@ var app = express();
 var bodyParser = require('body-parser');
 
 var general = require('./routes/general');
-var users = require('./routes/users');
+//var users = require('./routes/users');
 
 app.set('port', (process.env.PORT || 5000));
 

@@ -3,7 +3,7 @@ var router = express.Router();
 var bodyParser = require('body-parser');
 
 router.get('/', function(req, res){
-  res.send('API');
+  res.send('API for FE');
 });
 
 router.get('/chill-menu', function(req, res){
