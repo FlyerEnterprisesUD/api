@@ -6,6 +6,7 @@ var general = require('./routes/general');
 var users = require('./routes/users');
 
 app.set('port', (process.env.PORT || 5000));
+process.env.SECRET = 'test';
 
 app.use(express.static(__dirname + '/public'));
 
