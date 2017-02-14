@@ -5,15 +5,40 @@ var bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
 var User = require('../models/User.js');
 
-//var salt = bcrypt.genSaltSync(10);
+var salt = bcrypt.genSaltSync(10);
 
 router.get('/', function(req, res){
-  var user = User.create({
-    username: 'test',
-    email: 'test',
-    password: 'test'
-  });
   res.send('user');
+});
+
+router.post('/create', function(req, res){
+  var username = req.body.username;
+  var email = req.body.email;
+  var password = req.body.password;
+
+  var hash = bcrypt.hashSync(password, salt);
+
+  var user = User.create({
+    username: username,
+    email: email,
+    password: hash
+  });
+
+  if(user) {
+    res.json({
+      response: {
+        success: true
+      }
+    });
+  } else {
+    res.json({
+      response: {
+        success: false,
+        message: 'Something messed up. Try again later'
+      }
+    });
+  }
+
 });
 
 module.exports = router;
