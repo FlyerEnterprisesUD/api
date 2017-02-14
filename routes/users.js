@@ -41,4 +41,48 @@ router.post('/create', function(req, res){
 
 });
 
+router.post('/login', function(req, res){
+  var username = req.body.username;
+  var password = req.body.password;
+
+  User.findOne({ where: {username: username} }).then(function(user) {
+    if(user) {
+      var verified = bcrypt.compareSync(password, user.password);
+      var tempUser = {
+        username: user.username,
+        email: user.email,
+        password: user.password
+      }
+
+      if(verified){
+        var token = jwt.sign(tempUser, process.env.SECRET, { expiresIn: 60*60*24*12 });
+
+        delete tempUser.password;
+        res.json({
+          response: {
+            success: true,
+            user: tempUser,
+            token: token
+          }
+        });
+      } else {
+        res.json({
+          response: {
+            success: false,
+            message: 'Something went wrong. Invalid password'
+          }
+        });
+      }
+    } else {
+      res.json({
+        response: {
+          success: false,
+          message: 'Invalid credentials'
+        }
+      });
+    }
+
+  });
+});
+
 module.exports = router;
