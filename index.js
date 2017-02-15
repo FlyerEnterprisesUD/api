@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 
 var general = require('./routes/general');
 var users = require('./routes/users');
+var auth = require('./routes/auth');
 
 app.set('port', (process.env.PORT || 5000));
 process.env.SECRET = 'test';
@@ -15,5 +16,6 @@ app.use(bodyParser.json());
 
 app.use('/', general);
 app.use('/user', users);
+app.use('/auth', auth);
 
 app.listen(app.get('port'));
