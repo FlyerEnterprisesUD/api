@@ -18,6 +18,10 @@ var User = sequelize.define('user', {
     type: Sequelize.STRING,
     allowNull: false
   },
+  role: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
 }, {
   tableName: 'users'
 });

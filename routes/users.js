@@ -30,7 +30,8 @@ router.post('/create', function(req, res){
       var newUser = User.create({
         username: username,
         email: email,
-        password: hash
+        password: hash,
+        role: 'user'
       });
 
       if(newUser) {
@@ -62,7 +63,8 @@ router.post('/login', function(req, res){
       var tempUser = {
         username: user.username,
         email: user.email,
-        password: user.password
+        password: user.password,
+        role: user.role
       }
 
       if(verified){
