@@ -16,28 +16,39 @@ router.post('/create', function(req, res){
   var email = req.body.email;
   var password = req.body.password;
 
-  var hash = bcrypt.hashSync(password, salt);
+  User.findOne({ where: {username: username} }).then(function(user) {
+    if(user) {
+      res.json({
+        response: {
+          success: false,
+          message: 'Username Already Taken'
+        }
+      });
+    } else {
+      var hash = bcrypt.hashSync(password, salt);
 
-  var user = User.create({
-    username: username,
-    email: email,
-    password: hash
+      var newUser = User.create({
+        username: username,
+        email: email,
+        password: hash
+      });
+
+      if(newUser) {
+        res.json({
+          response: {
+            success: true
+          }
+        });
+      } else {
+        res.json({
+          response: {
+            success: false,
+            message: 'Something messed up. Try again later'
+          }
+        });
+      }
+    }
   });
-
-  if(user) {
-    res.json({
-      response: {
-        success: true
-      }
-    });
-  } else {
-    res.json({
-      response: {
-        success: false,
-        message: 'Something messed up. Try again later'
-      }
-    });
-  }
 
 });
 
