@@ -4,6 +4,7 @@ var sequelize = new Sequelize('mysql://b6604c4169e159:8d28475f@us-cdbr-iron-east
   pool: { maxIdleTime: 500, maxConnections: 5, minConnections: 0}
 });
 
+//Creating user table/model
 var User = sequelize.define('user', {
   username: {
     type: Sequelize.STRING,

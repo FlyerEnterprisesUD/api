@@ -1,9 +1,11 @@
+// Requires
 var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
 var jwt = require('jsonwebtoken');
 var User = require('../models/User');
 
+// Make sure that the user is authenticated
 router.use(function(req, res, next){
   var token = req.body.token || req.headers['token'];
 
@@ -20,6 +22,7 @@ router.use(function(req, res, next){
   }
 });
 
+// Verify that token hasn't expired and send user object back
 router.post('/verify', function(req, res) {
   var token = req.body.token || req.headers['token'];
   var decoded = jwt.verify(token, process.env.SECRET);
@@ -30,7 +33,5 @@ router.post('/verify', function(req, res) {
     }
   });
 });
-
-//var decoded = jwt.verify(token, 'shhhhh');
 
 module.exports = router;

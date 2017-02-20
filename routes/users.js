@@ -1,3 +1,4 @@
+// Requires
 var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
@@ -5,17 +6,21 @@ var bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
 var User = require('../models/User.js');
 
+// Generate Salt
 var salt = bcrypt.genSaltSync(10);
 
 router.get('/', function(req, res){
   res.send('user');
 });
 
+//Create User route
 router.post('/create', function(req, res){
+  // Getting fields from app
   var username = req.body.username;
   var email = req.body.email;
   var password = req.body.password;
 
+  // Checking if username already exixts
   User.findOne({ where: {username: username} }).then(function(user) {
     if(user) {
       res.json({
@@ -25,6 +30,7 @@ router.post('/create', function(req, res){
         }
       });
     } else {
+      //Creating new user if username doesn't already exist
       var hash = bcrypt.hashSync(password, salt);
 
       var newUser = User.create({
@@ -53,10 +59,13 @@ router.post('/create', function(req, res){
 
 });
 
-router.post('/login', function(req, res){
+//Login Route
+router.post('/login', function(req, res) {
+  //Getting fields from app
   var username = req.body.username;
   var password = req.body.password;
 
+  //Finding user in database
   User.findOne({ where: {username: username} }).then(function(user) {
     if(user) {
       var verified = bcrypt.compareSync(password, user.password);
@@ -67,6 +76,7 @@ router.post('/login', function(req, res){
         role: user.role
       }
 
+      //Creating token
       if(verified){
         var token = jwt.sign(tempUser, process.env.SECRET, { expiresIn: 60*60*24*12 });
 
