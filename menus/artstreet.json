@@ -188,6 +188,286 @@
         "price": "$7.99"
       },
       {
+        "name": "O'Keeffe",
+        "group": "Pitas & Wraps",
+        "ingredients": [
+          "Hummus",
+          "Lettuce",
+          "Cucumber",
+          "Spinach",
+          "Tomato",
+          "Chicken - $0.99"
+        ],
+        "price": "$4.99"
+      },
+      {
+        "name": "Manray",
+        "group": "Pitas & Wraps",
+        "ingredients": [
+          "Chicken",
+          "Bacon",
+          "Cheddar Cheese",
+          "Onion",
+          "Avocado Spread",
+          "Ranch"
+        ],
+        "price": "$5.99"
+      },
+      {
+        "name": "Rembrandt",
+        "group": "Pitas & Wraps",
+        "ingredients": [
+          "Turkey",
+          "Bacon",
+          "Mozzarella Cheese",
+          "Lettuce",
+          "Tomato"
+        ],
+        "price": "$5.99"
+      },
+      {
+        "name": "Seurat",
+        "group": "Pitas & Wraps",
+        "ingredients": [
+          "Chicken",
+          "Tomato",
+          "Lettuce",
+          "Ranch"
+        ],
+        "price": "$5.99"
+      },
+      {
+        "name": "Escher",
+        "group": "Quesadillas",
+        "ingredients": [
+          "Wrap of your choice",
+          "Marinated Chicken",
+          "Pepper Jack Cheese",
+          "Green Peppers",
+          "Tomatoes",
+          "Ranch"
+        ],
+        "price": "$6.99"
+      },
+      {
+        "name": "Rothko",
+        "group": "Quesadillas",
+        "ingredients": [
+          "Wrap of your choice",
+          "Marinated Chicken",
+          "Cheddar Cheese",
+          "Tomatoes",
+          "BBQ Sauce"
+        ],
+        "price": "$6.99"
+      },
+      {
+        "name": "Manilow",
+        "group": "Pizzas",
+        "ingredients": [
+          "Marinara",
+          "Mozzarella",
+          "Parmesan",
+          "Basil"
+        ],
+        "price": "$5.49"
+      },
+      {
+        "name": "Sinatra",
+        "group": "Pizzas",
+        "ingredients": [
+          "Marinara",
+          "Mozzarella",
+          "Parmesan",
+          "Pepperoni",
+          "Basil"
+        ],
+        "price": "$5.49"
+      },
+      {
+        "name": "Zeppelin",
+        "group": "Pizzas",
+        "ingredients": [
+          "BBQ Sauce",
+          "Chicken",
+          "Two Kinds of Cheese",
+          "Onion",
+          "Ranch"
+        ],
+        "price": "$5.99"
+      },
+      {
+        "name": "McCartney",
+        "group": "Pizzas",
+        "ingredients": [
+          "Marinara",
+          "Mozzarella",
+          "Parmesan",
+          "Onion",
+          "Green Peppers",
+          "Tomato",
+          "Spinach",
+          "Basil"
+        ],
+        "price": "$5.49"
+      },
+      {
+        "name": "Springsteen",
+        "group": "Pizzas",
+        "ingredients": [
+          "Chicken",
+          "Mozzarella",
+          "Frank's Red Hot",
+          "Ranch"
+        ],
+        "price": "$5.49"
+      },
+      {
+        "name": "DaVinci",
+        "group": "Salads",
+        "ingredients": [
+          "Cucumber",
+          "Tomato",
+          "Onion",
+          "Parmesan",
+          "Croutons",
+          "Ceasar Dressing"
+        ],
+        "price": "$5.99 / $3.99"
+      },
+      {
+        "name": "Kahlo",
+        "group": "Salads",
+        "ingredients": [
+          "Tomato",
+          "Onion",
+          "Pepper Jack Cheese",
+          "Spices",
+          "Ranch",
+          "BBQ Sauce"
+        ],
+        "price": "$5.99 / $3.99"
+      },
+      {
+        "name": "Picasso",
+        "group": "Salads",
+        "ingredients": [
+          "Mandarin Oranges",
+          "Craisins",
+          "Walnuts",
+          "Blue Cheese",
+          "Raspberry Vinaigrette",
+          ""
+        ],
+        "price": "$5.99 / $3.99"
+      },
+      {
+        "name": "Panini",
+        "group": "Build Yo Own",
+        "ingredients": [
+          "Bread",
+          "Ciabatta",
+          "Wheat",
+          "",
+          "Meat",
+          "Turkey",
+          "Ham",
+          "Chicken",
+          "Pepperoni",
+          "Salami",
+          "",
+          "Cheese",
+          "Pepper Jack",
+          "Mozzarella",
+          "Cheddar",
+          "Parmesan",
+          "Blue Cheese",
+          "American Cheese",
+          "",
+          "Veggies",
+          "Green Peppers",
+          "Onion",
+          "Diced Tomatoes",
+          "Cucumber",
+          "Lettuce",
+          "",
+          "Chips",
+          "Dayton Local",
+          "Mike-Sells"
+        ],
+        "price": "$7.49"
+      },
+      {
+        "name": "Salad",
+        "group": "Build Yo Own",
+        "ingredients": [
+          "Lettuce",
+          "Crisp Lettuce",
+          "Tender Spinach",
+          "",
+          "Protein",
+          "Cajun Spiced Chicken - $1.00",
+          "",
+          "Toppings",
+          "Green Peppers",
+          "Onion",
+          "Diced Tomatoes",
+          "Cucumber",
+          "Walnut",
+          "Cranberries",
+          "Mandarin Oranges",
+          "Craisins",
+          "Croutons",
+          "",
+          "Cheese",
+          "Pepper Jack",
+          "Mozzarella",
+          "Cheddar",
+          "Parmesan",
+          "Blue Cheese"
+        ],
+        "price": "$5.99 / $3.99"
+      },
+      {
+        "name": "Smoothies",
+        "group": "Smoothies",
+        "ingredients": [
+          "Strawberry Blonde",
+          "Wildberry",
+          "Peach Party",
+          "Alotta Colada",
+          "Strawberry / Raspberry Lemonade",
+          "Ryan's Redemption",
+          "Katy Berry"
+        ],
+        "price": "$3.50"
+      },
+      {
+        "name": "With Coffee / Creamy Treats",
+        "group": "Smoothies",
+        "ingredients": [
+          "Caramello",
+          "Jack Frost",
+          "Cocoa Motion / Mint Oreo Blast",
+          "Oreo Blizzard"
+        ],
+        "price": "$3.65 / $3.75"
+      },
+      {
+        "name": "Cookies / Muffins / Brownies",
+        "group": "Pastries",
+        "ingredients": [
+          "Sugar Cookie",
+          "Double Chocolate Chip Cookie",
+          "Lemon Poppyseed",
+          "Blueberry Muffin",
+          "Cinnamon Crumble Muffin",
+          "Chocolate Chip Muffin",
+          "Double Trouble Chocolate Chip Brownie"
+        ],
+        "price": "$1.50 / $2.00"
+      },
+      {
         "name": "Mochas",
         "group": "Specialty Drinks",
         "ingredients": [
@@ -239,9 +519,7 @@
       {
         "name": "Drip Coffee",
         "group": "Classic Drinks",
-        "ingredients": [
-
-        ],
+        "ingredients": [],
         "price": "Tall - $1.75 / Grande -  $2.00"
       },
       {
