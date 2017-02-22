@@ -10,10 +10,7 @@
           "Orange Juice",
           "Greek Yogurt"
         ],
-        "sizes": [
-          "Small - $3.50",
-          "Large - $4.75"
-        ]
+        "price": "Small - $3.50 / Large - $4.75"
       },
       {
         "name": "Cruising",
@@ -23,10 +20,7 @@
           "Raspberry",
           "Apple Juice"
         ],
-        "sizes": [
-          "Small - $3.50",
-          "Large - $4.75"
-        ]
+        "price": "Small - $3.50 / Large - $4.75"
       },
       {
         "name": "MVP",
@@ -36,10 +30,7 @@
           "Pineapple",
           "Almond Milk"
         ],
-        "sizes": [
-          "Small - $3.50",
-          "Large - $4.75"
-        ]
+        "price": "Small - $3.50 / Large - $4.75"
       },
       {
         "name": "Berry Blast",
@@ -49,10 +40,7 @@
           "Raspberry",
           "Blueberry"
         ],
-        "sizes": [
-          "Small - $3.50",
-          "Large - $4.75"
-        ]
+        "price": "Small - $3.50 / Large - $4.75"
       },
       {
         "name": "Strawberry Banana",
@@ -62,10 +50,7 @@
           "Banana",
           "Almond Milk"
         ],
-        "sizes": [
-          "Small - $3.50",
-          "Large - $4.75"
-        ]
+        "price": "Small - $3.50 / Large - $4.75"
       },
       {
         "name": "Front Porch",
@@ -75,10 +60,7 @@
           "Apple Juice",
           "Kale"
         ],
-        "sizes": [
-          "Small - $3.50",
-          "Large - $4.75"
-        ]
+        "price": "Small - $3.50 / Large - $4.75"
       },
       {
         "name": "CT Crunch",
@@ -90,10 +72,7 @@
           "Granola",
           "Greek Yogurt"
         ],
-        "sizes": [
-          "Small - $3.50",
-          "Large - $4.75"
-        ]
+        "price": "Small - $3.50 / Large - $4.75"
       },
       {
         "name": "Main Squeeze",
@@ -105,10 +84,7 @@
           "Spinach",
           "Banana"
         ],
-        "sizes": [
-          "Small - $3.50",
-          "Large - $4.75"
-        ]
+        "price": "Small - $3.50 / Large - $4.75"
       },
       {
         "name": "Rudy",
@@ -119,10 +95,7 @@
           "Spinach",
           "Orange Juice"
         ],
-        "sizes": [
-          "Small - $3.50",
-          "Large - $4.75"
-        ]
+        "price": "Small - $3.50 / Large - $4.75"
       },
       {
         "name": "Island Flyer",
@@ -134,10 +107,7 @@
           "Blueberry",
           "Raspberry"
         ],
-        "sizes": [
-          "Small - $3.50",
-          "Large - $4.75"
-        ]
+        "price": "Small - $3.50 / Large - $4.75"
       },
       {
         "name": "Archie",
@@ -148,10 +118,7 @@
           "Granola",
           "Almond Milk"
         ],
-        "sizes": [
-          "Small - $3.50",
-          "Large - $4.75"
-        ]
+        "price": "Small - $3.50 / Large - $4.75"
       },
       {
         "name": "Power Up",
@@ -162,10 +129,7 @@
           "Chocolate Silk",
           "Chocolate Chips"
         ],
-        "sizes": [
-          "Small - $3.50",
-          "Large - $4.75"
-        ]
+        "price": "Small - $3.50 / Large - $4.75"
       },
       {
         "name": "Marathon",
@@ -176,10 +140,7 @@
           "Granola",
           "Almond Milk"
         ],
-        "sizes": [
-          "Small - $3.50",
-          "Large - $4.75"
-        ]
+        "price": "Small - $3.50 / Large - $4.75"
       },
       {
         "name": "PB + J",
@@ -190,10 +151,7 @@
           "Peanut Butter",
           "Almond Milk"
         ],
-        "sizes": [
-          "Small - $3.50",
-          "Large - $4.75"
-        ]
+        "price": "Small - $3.50 / Large - $4.75"
       },
       {
         "name": "Create Your Own",
@@ -224,10 +182,7 @@
           "Peanut Butter - $.75",
           "Greek Yogurt - $1.00"
         ],
-        "sizes": [
-          "Small - $3.65",
-          "Large - $4.95"
-        ]
+        "price": "Small - $3.50 / Large - $4.75"
       }
     ]
   }

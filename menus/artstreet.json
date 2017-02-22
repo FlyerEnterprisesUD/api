@@ -1,0 +1,303 @@
+{
+  "menu": {
+    "products": [
+      {
+        "name": "Deluxe Scrambler",
+        "group": "Scramblers & Bagels",
+        "ingredients": [
+          "Wrap of your choice",
+          "Egg",
+          "Sausage",
+          "Bacon",
+          "Cheddar Cheese",
+          "Green Peppers",
+          "Diced Tomato"
+        ],
+        "price": "$4.99"
+      },
+      {
+        "name": "Denver Scrambler",
+        "group": "Scramblers & Bagels",
+        "ingredients": [
+          "Wrap of your choice",
+          "Egg",
+          "Ham",
+          "Pepper Jack Cheese",
+          "Green Peppers",
+          "Diced Tomato",
+          "Cajun Spices"
+        ],
+        "price": "$4.99"
+      },
+      {
+        "name": "Garden Scrambler",
+        "group": "Scramblers & Bagels",
+        "ingredients": [
+          "Wrap of your choice",
+          "Egg",
+          "American Cheese",
+          "Green Peppers",
+          "Diced Tomato",
+          "Spinach",
+          "Basil"
+        ],
+        "price": "$4.99"
+      },
+      {
+        "name": "Traditional Scrambler",
+        "group": "Scramblers & Bagels",
+        "ingredients": [
+          "Wrap of your choice",
+          "Egg",
+          "Sausage",
+          "American Cheese"
+        ],
+        "price": "$3.99"
+      },
+      {
+        "name": "Heavyweight",
+        "group": "Scramblers & Bagels",
+        "ingredients": [
+          "White or Wheat Bagel",
+          "Egg",
+          "Bacon, Ham. or Sausage",
+          "American Cheese"
+        ],
+        "price": "$3.99"
+      },
+      {
+        "name": "Lightweight",
+        "group": "Scramblers & Bagels",
+        "ingredients": [
+          "White or Wheat Bagel",
+          "Egg",
+          "American Cheese"
+        ],
+        "price": "$3.29"
+      },
+      {
+        "name": "Bagel",
+        "group": "Scramblers & Bagels",
+        "ingredients": [
+          "White or Wheat Bagel",
+          "Cream Cheese - $0.50"
+        ],
+        "price": "$0.99"
+      },
+      {
+        "name": "Dali",
+        "group": "Paninis",
+        "ingredients": [
+          "Cajun Seasoning",
+          "Green Peppers",
+          "Pepper Jack Cheese",
+          "Marinated Chicken",
+          "Sig Sauce"
+        ],
+        "price": "$7.49 / $5.49"
+      },
+      {
+        "name": "El Greco",
+        "group": "Paninis",
+        "ingredients": [
+          "Turkey",
+          "Bacon",
+          "Pepper Jack Cheese",
+          "Sig Sauce"
+        ],
+        "price": "$6.99 / $5.49"
+      },
+      {
+        "name": "Michelangelo",
+        "group": "Paninis",
+        "ingredients": [
+          "Chicken",
+          "Mozzarella Cheese",
+          "Marinara",
+          "Onion",
+          "Basil"
+        ],
+        "price": "$$7.49 / $5.49"
+      },
+      {
+        "name": "Monet",
+        "group": "Paninis",
+        "ingredients": [
+          "Marinated Chicken",
+          "Cheddar Cheese",
+          "Tomatoes",
+          "Spicy Mustard"
+        ],
+        "price": "$7.49 / $5.49"
+      },
+      {
+        "name": "Ono",
+        "group": "Paninis",
+        "ingredients": [
+          "Mozzarella",
+          "Tomato",
+          "Basil",
+          "Spinach",
+          "Sig Sauce"
+        ],
+        "price": "$5.49 / $3.99"
+      },
+      {
+        "name": "Rockwell",
+        "group": "Paninis",
+        "ingredients": [
+          "Turkey",
+          "Bacon",
+          "Cheese",
+          "Tomato",
+          "Mayo"
+        ],
+        "price": "$6.99 / $4.99"
+      },
+      {
+        "name": "Van Gogh",
+        "group": "Paninis",
+        "ingredients": [
+          "Ham",
+          "Salami",
+          "Pepperoni",
+          "Mozzarella",
+          "Basil",
+          "Sig Sauce"
+        ],
+        "price": "$6.99 / $4.99"
+      },
+      {
+        "name": "Warhol",
+        "group": "Paninis",
+        "ingredients": [
+          "American Cheese",
+          "Cheddar Cheese",
+          "Mozzarella Cheese",
+          "Basil"
+        ],
+        "price": "$5.49 / $3.99"
+      },
+      {
+        "name": "Cafe Couples",
+        "group": "Paninis",
+        "ingredients": [
+          "Half a panini",
+          "Half a salad"
+        ],
+        "price": "$7.99"
+      },
+      {
+        "name": "Mochas",
+        "group": "Specialty Drinks",
+        "ingredients": [
+          "Chocolate Raspberry Truffle",
+          "Grasshopper",
+          "White Cow",
+          "Nutty Buddy",
+          "Milky Way",
+          "",
+          "Flavor Options - $0.50",
+          "Caramel",
+          "Mint",
+          "Hazelnut",
+          "Pumpkin Spice",
+          "Raspberry",
+          "English Toffee",
+          "Apple",
+          "Cinnamon",
+          "Pepperment",
+          "Almond",
+          "Irish Cream"
+        ],
+        "price": "Tall - $3.00 / Grande - $3.75"
+      },
+      {
+        "name": "Lattes / Iced Lattes",
+        "group": "Specialty Drinks",
+        "ingredients": [
+          "Caramel Macchiato",
+          "French Vanilla",
+          "Nutty Irishman",
+          "Apple Pie a la Mode",
+          "",
+          "Flavor Options - $0.50",
+          "Caramel",
+          "Mint",
+          "Hazelnut",
+          "Pumpkin Spice",
+          "Raspberry",
+          "English Toffee",
+          "Apple",
+          "Cinnamon",
+          "Pepperment",
+          "Almond",
+          "Irish Cream"
+        ],
+        "price": "Tall - $2.75 / Grande - $3.25"
+      },
+      {
+        "name": "Drip Coffee",
+        "group": "Classic Drinks",
+        "ingredients": [
+
+        ],
+        "price": "Tall - $1.75 / Grande -  $2.00"
+      },
+      {
+        "name": "Iced Coffee",
+        "group": "Classic Drinks",
+        "ingredients": [],
+        "price": "Tall - $1.75 / Grande -  $2.00"
+      },
+      {
+        "name": "Chai Tea",
+        "group": "Classic Drinks",
+        "ingredients": [],
+        "price": "Tall - $3.00 / Grande -  $3.50"
+      },
+      {
+        "name": "Vanilla Chai",
+        "group": "Classic Drinks",
+        "ingredients": [],
+        "price": "Tall - $3.50 / Grande -  $3.75"
+      },
+      {
+        "name": "Hot Chocolate",
+        "group": "Classic Drinks",
+        "ingredients": [],
+        "price": "Tall - $2.35 / Grande -  $2.50"
+      },
+      {
+        "name": "White Hot Chocolate",
+        "group": "Classic Drinks",
+        "ingredients": [],
+        "price": "Tall - $2.35 / Grande -  $2.50"
+      },
+      {
+        "name": "Latte / Iced Latte",
+        "group": "Classic Drinks",
+        "ingredients": [],
+        "price": "Tall - $2.75 / Grande -  $3.25"
+      },
+      {
+        "name": "Mocha",
+        "group": "Classic Drinks",
+        "ingredients": [],
+        "price": "Tall - $3.00 / Grande -  $3.75"
+      },
+      {
+        "name": "Tea",
+        "group": "Classic Drinks",
+        "ingredients": [],
+        "price": "$1.35"
+      },
+      {
+        "name": "Pepsi Fountain Drinks",
+        "group": "Classic Drinks",
+        "ingredients": [],
+        "price": "$1.49"
+      }
+    ]
+  }
+}

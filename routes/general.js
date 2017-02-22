@@ -13,6 +13,11 @@ router.get('/chill-menu', function(req, res){
   res.sendfile('./menus/chill.json');
 });
 
+// Art Street Menu (returns json file)
+router.get('/artstreet-menu', function(req, res){
+  res.sendfile('./menus/artstreet.json');
+});
+
 // Chill About (returns json file)
 router.get('/chill-about', function(req, res){
   res.sendfile('./about/chill.json');
