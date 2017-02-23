@@ -1,0 +1,175 @@
+{
+    "menu" : {
+      "products": [
+        {
+          "name": "Taft" ,
+          "group": "Breakfast",
+          "ingredients": [
+              "Bagel with your choice of cheese, egg and meat of choice."
+          ],
+          "price": "$4.49"
+        },
+        {
+          "name": "Ginsburg",
+          "group": "Breakfast",
+          "ingredients": [
+            "Wrap with egg, tomato, mozzarella cheese, spinach and basil."
+          ],
+          "price": "$4.49"
+        },
+        {
+          "name": "De Novo",
+          "group": "Breakfast",
+          "ingredients": [
+            "Wrap with egg, bacon, sausage, cheddar cheese and green peppers."
+          ],
+          "price":"$4.49"
+        },
+        {
+          "name": "Van Burren",
+          "group": "Breakfast",
+          "ingredients": [
+            "Breakfast pizza with egg, avacado, pepper jack cheese, tomato, green pepper, ham and bacon."
+          ],
+          "price":"$4.49"
+        },
+        {
+          "name": "Build Your Own",
+          "group": "Salads",
+          "ingredients": [
+            "Choose either spinach or lettuce, choice of meat, cheese, two veggies and a dressing of your choice."
+          ],
+          "price":"$5.49"
+        },
+        {
+          "name": "Liberty Bell",
+          "group": "Pita Pizzas",
+          "ingredients": [
+            "Marinara sauce topped with mozzarella and parmesan cheese, basil and olive oil. (Optional Pepperoni)"
+          ],
+          "price":"$5.49"
+        },
+        {
+          "name": "Declaration",
+          "group": "Pita Pizzas",
+          "ingredients": [
+            "Chicken, bacon, ranch, mozzarella cheese, green peppers, banana peppers, onions and hot sauce."
+
+          ],
+          "price":"$5.99"
+        },
+        {
+          "name": "Mayflower",
+          "group": "Pita Pizzas",
+          "ingredients": [
+            "Parmesan and mozzarella cheese, tomato, basil, and olive oil. (No Marinara)"
+          ],
+          "price":"$5.49"
+        },
+        {
+          "name": "The Harrison",
+          "group": "Pita Pizzas",
+          "ingredients": [
+            "BBQ Sauce, feta cheese, green peppers, yellow peppers, chicken and bacon."
+          ],
+          "price":"$5.99"
+        },
+        {
+          "name": "Patriot Pizza Bagel",
+          "group": "Pita Pizzas",
+          "ingredients": [
+            "A plain bagel, marinara, mozzarella, choice of either ham, pepperoni or salami, and olive oil."
+          ],
+          "price":"$5.99"
+        },
+        {
+          "name": "Nomos",
+          "group": "Sandwiches and Wraps",
+          "ingredients": [
+            "Hummus, with feta, spinach, tomato, onion, olives and italian dressing."
+          ],
+          "price":"$5.99"
+        },
+        {
+          "name": "Miranda Melt",
+          "group": "Sandwiches and Wraps",
+          "ingredients": [
+            "Tomatoes, mozzarella, and basil. Add Chicken for $1"
+          ],
+          "price":"$5.99"
+        },
+        {
+          "name": "Scalia",
+          "group": "Sandwiches and Wraps",
+          "ingredients": [
+            "Ham, pepperoni, mozzarella, banana peppers, basil and pesto mayo."
+          ],
+          "price":"$6.49"
+        },
+        {
+          "name": "Bailiff BLT",
+          "group": "Sandwiches and Wraps",
+          "ingredients": [
+            "Turkey with bacon, lettuce, tomato and mayo."
+          ],
+          "price":"$5.99"
+        },
+        {
+          "name": "Franklin",
+          "group": "Sandwiches and Wraps",
+          "ingredients": [
+            "Chicken, cheddar cheese, ranch, onion and BBQ sauce."
+          ],
+          "price":"$6.49"
+        },
+        {
+          "name": "Jackson",
+          "group": "Sandwiches and Wraps",
+          "ingredients": [
+            "Pepperoni with turkey, pepper jack cheese, Cajun seasoning, tomatoes, spinach, avacado and mayo."
+          ],
+          "price":"$6.49"
+        },
+        {
+          "name": "Buffalo",
+          "group": "Sandwiches and Wraps",
+          "ingredients": [
+            "Chicken with pepper jack cheese, lettuce, onion, ranch and hot sauce."
+          ],
+          "price":"$6.49"
+        },
+        {
+          "name": "Rushmore",
+          "group": "Sandwiches and Wraps",
+          "ingredients": [
+            "Chicken with parmesan cheese, mozzarella, marinara and basil."
+          ],
+          "price":"$6.49"
+        },
+        {
+          "name": "Reagan Crunch",
+          "group": "Sandwiches and Wraps",
+          "ingredients": [
+            "Pita with chicken, spinach, tomato, mozzarella, ceasar, onion and hummus."
+          ],
+          "price":"$6.49"
+        },
+        {
+          "name": "Eisenhauer",
+          "group": "Sandwiches and Wraps",
+          "ingredients": [
+            "Turkey with pepperoni, pesto mayo, mozzarella, banana peppers, tomatoes and basil."
+          ],
+          "price":"$5.99"
+        },
+        {
+          "name": "Washington",
+          "group": "Sandwiches and Wraps",
+          "ingredients": [
+            "Turkey with bacon, cheddar cheese, tomatoes, avocado and mayo."
+          ],
+          "price":"$6.49"
+        },
+      ]
+    }
+}
