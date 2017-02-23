@@ -5,10 +5,10 @@
           "name": "Taft" ,
           "group": "Breakfast",
           "ingredients": [
-              "Choice of bagel"
-              "Your choice of cheese"
-              "Egg"
-              "Choice of meat"
+              "Choice of Bagel",
+              "Choice of Cheese",
+              "Egg",
+              "Choice of Meat"
           ],
           "price": "$4.49"
         },
@@ -16,11 +16,11 @@
           "name": "Ginsburg",
           "group": "Breakfast",
           "ingredients": [
-            "Choice of wrap"
-            "Egg"
-            "Tomato"
-            "Mozzarella cheese"
-            "Spinach"
+            "Choice of Wrap"
+            "Egg",
+            "Tomato",
+            "Mozzarella Cheese",
+            "Spinach",
             "Basil"
           ],
           "price": "$4.49"
@@ -29,12 +29,12 @@
           "name": "De Novo",
           "group": "Breakfast",
           "ingredients": [
-            "Choice of wrap"
-            "Egg"
-            "Bacon"
-            "Sausage"
-            "Cheddar cheese"
-            "Green peppers"
+            "Choice of Wrap",
+            "Egg",
+            "Bacon",
+            "Sausage",
+            "Cheddar Cheese",
+            "Green Peppers"
           ],
           "price":"$4.49"
         },
@@ -42,13 +42,12 @@
           "name": "Van Burren",
           "group": "Breakfast",
           "ingredients": [
-            "Breakfast pizza"
-            "Egg"
-            "Avacado"
-            "Pepper jack cheese"
-            "Tomato"
-            "Green pepper"
-            "Ham"
+            "Egg",
+            "Avacado",
+            "Pepper Jack Cheese",
+            "Tomato",
+            "Green Pepper",
+            "Ham",
             "Bacon"
           ],
           "price":"$4.49"
@@ -57,11 +56,11 @@
           "name": "Build Your Own",
           "group": "Salads",
           "ingredients": [
-            "Choose either spinach or lettuce"
-            "Choice of meat"
-            "Cheese"
-            "Two veggies"
-            "Dressing of your choice"
+            "Choose Either Spinach or Lettuce",
+            "Choice of Meat",
+            "Cheese",
+            "Two Veggies",
+            "Dressing of your Choice"
           ],
           "price":"$5.49"
         },
@@ -69,11 +68,11 @@
           "name": "Liberty Bell",
           "group": "Pita Pizzas",
           "ingredients": [
-            "Marinara sauce"
-            "Mozzarella cheese"
-            "Parmesan cheese"
-            "Basil"
-            "Olive oil"
+            "Marinara Sauce",
+            "Mozzarella Cheese",
+            "Parmesan Cheese",
+            "Basil",
+            "Olive Oil",
             "(Optional Pepperoni)"
           ],
           "price":"$5.49"
@@ -82,14 +81,14 @@
           "name": "Declaration",
           "group": "Pita Pizzas",
           "ingredients": [
-            "Chicken"
-            "Bacon"
-            "Ranch"
-            "Mozzarella cheese"
-            "Green peppers"
-            "Banana peppers"
-            "Onions"
-            "Hot sauce"
+            "Chicken",
+            "Bacon",
+            "Ranch",
+            "Mozzarella Cheese",
+            "Green Peppers",
+            "Banana Peppers",
+            "Onions",
+            "Hot Sauce"
 
           ],
           "price":"$5.99"
@@ -98,12 +97,11 @@
           "name": "Mayflower",
           "group": "Pita Pizzas",
           "ingredients": [
-            "Parmesan cheese"
-            "Mozzarella cheese"
-            "Tomato"
-            "Basil"
-            "Olive oil"
-            "(No Marinara)"
+            "Parmesan Cheese",
+            "Mozzarella Cheese",
+            "Tomato",
+            "Basil",
+            "Olive Oil"
           ],
           "price":"$5.49"
         },
@@ -111,11 +109,11 @@
           "name": "The Harrison",
           "group": "Pita Pizzas",
           "ingredients": [
-            "BBQ Sauce"
-            "Feta cheese"
-            "Green peppers"
-            "Yellow peppers"
-            "Chicken"
+            "BBQ Sauce",
+            "Feta Cheese",
+            "Green Peppers",
+            "Yellow Peppers",
+            "Chicken",
             "Bacon"
           ],
           "price":"$5.99"
@@ -124,10 +122,10 @@
           "name": "Patriot Pizza Bagel",
           "group": "Pita Pizzas",
           "ingredients": [
-            "Plain bagel"
-            "Marinara"
-            "Mozzarella cheese"
-            "Choice of either ham, pepperoni or salami"
+            "Plain bagel",
+            "Marinara",
+            "Mozzarella Cheese",
+            "Choice of Either Ham, Pepperoni or Salami",
             "Olive oil"
           ],
           "price":"$5.99"
@@ -136,12 +134,12 @@
           "name": "Nomos",
           "group": "Sandwiches and Wraps",
           "ingredients": [
-            "Hummus"
-            "Feta"
-            "Spinach"
-            "Tomato"
-            "Onion"
-            "Olives"
+            "Hummus",
+            "Feta",
+            "Spinach",
+            "Tomato",
+            "Onion",
+            "Olives",
             "Italian dressing"
           ],
           "price":"$5.99"
@@ -150,10 +148,10 @@
           "name": "Miranda Melt",
           "group": "Sandwiches and Wraps",
           "ingredients": [
-            "Tomatoes"
-            "Mozzarella cheese"
-            "Basil"
-            "Add Chicken for $1"
+            "Tomatoes",
+            "Mozzarella Cheese",
+            "Basil",
+            "Chicken - $1.00"
           ],
           "price":"$5.99"
         },
@@ -161,11 +159,11 @@
           "name": "Scalia",
           "group": "Sandwiches and Wraps",
           "ingredients": [
-            "Ham"
-            "Pepperoni"
-            "Mozzarella cheese"
-            "Banana peppers"
-            "Basil"
+            "Ham",
+            "Pepperoni",
+            "Mozzarella Cheese",
+            "Banana Peppers",
+            "Basil",
             "Pesto mayo"
           ],
           "price":"$6.49"
@@ -174,11 +172,11 @@
           "name": "Bailiff BLT",
           "group": "Sandwiches and Wraps",
           "ingredients": [
-            "Turkey"
-            "Bacon"
-            "Lettuce"
-            "Tomato"
-            "Mayo"
+            "Turkey",
+            "Bacon",
+            "Lettuce",
+            "Tomato",
+            "Mayo",
           ],
           "price":"$5.99"
         },
@@ -186,11 +184,11 @@
           "name": "Franklin",
           "group": "Sandwiches and Wraps",
           "ingredients": [
-            "Chicken"
-            "Cheddar cheese"
-            "Ranch"
-            "Onion"
-            "BBQ sauce"
+            "Chicken",
+            "Cheddar cheese",
+            "Ranch",
+            "Onion",
+            "BBQ Sauce",
           ],
           "price":"$6.49"
         },
@@ -198,13 +196,13 @@
           "name": "Jackson",
           "group": "Sandwiches and Wraps",
           "ingredients": [
-            "Pepperoni"
-            "Turkey"
-            "Pepper jack cheese"
-            "Cajun seasoning"
-            "Tomatoes"
-            "Spinach"
-            "Avacado"
+            "Pepperoni",
+            "Turkey",
+            "Pepper Jack Cheese",
+            "Cajun Seasoning",
+            "Tomatoes",
+            "Spinach",
+            "Avacado",
             "Mayo"
           ],
           "price":"$6.49"
@@ -213,12 +211,12 @@
           "name": "Buffalo",
           "group": "Sandwiches and Wraps",
           "ingredients": [
-            "Chicken"
-            "pepper jack cheese"
-            "lettuce"
-            "Onion"
-            "Ranch"
-            "Hot sauce."
+            "Chicken",
+            "Pepper Jack Cheese",
+            "lettuce",
+            "Onion",
+            "Ranch",
+            "Hot Sauce"
           ],
           "price":"$6.49"
         },
@@ -226,11 +224,11 @@
           "name": "Rushmore",
           "group": "Sandwiches and Wraps",
           "ingredients": [
-            "Chicken"
-            "Parmesan cheese"
-            "Mozzarella cheese"
-            "Marinara"
-            "Basil"
+            "Chicken",
+            "Parmesan Cheese",
+            "Mozzarella Cheese",
+            "Marinara",
+            "Basil",
           ],
           "price":"$6.49"
         },
@@ -238,13 +236,13 @@
           "name": "Reagan Crunch",
           "group": "Sandwiches and Wraps",
           "ingredients": [
-            "Pita"
-            "Chicken"
-            "Spinach"
-            "Tomato"
-            "Mozzarella"
-            "Ceasar"
-            "Onion"
+            "Pita",
+            "Chicken",
+            "Spinach",
+            "Tomato",
+            "Mozzarella",
+            "Ceasar",
+            "Onion",
             "Hummus"
           ],
           "price":"$6.49"
@@ -253,12 +251,12 @@
           "name": "Eisenhauer",
           "group": "Sandwiches and Wraps",
           "ingredients": [
-            "Turkey"
-            "Pepperoni"
-            "Pesto mayo"
-            "Mozzarella"
-            "Banana peppers"
-            "Tomatoes"
+            "Turkey",
+            "Pepperoni",
+            "Pesto mayo",
+            "Mozzarella",
+            "Banana Peppers",
+            "Tomatoes",
             "Basil"
           ],
           "price":"$5.99"
@@ -267,14 +265,14 @@
           "name": "Washington",
           "group": "Sandwiches and Wraps",
           "ingredients": [
-            "Turkey"
-            "Bacon"
-            "Cheddar cheese"
-            "Tomatoes"
-            "Avocado"
+            "Turkey",
+            "Bacon",
+            "Cheddar Cheese",
+            "Tomatoes",
+            "Avocado",
             "Mayo"
           ],
-          "price":"$6.49"
+          "price": "$6.49"
         }
       ]
     }
