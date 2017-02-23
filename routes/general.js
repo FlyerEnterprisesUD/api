@@ -23,9 +23,14 @@ router.get('/blendexpress-menu', function(req, res){
   res.sendfile('./menus/blendexpress.json');
 });
 
-// Blend Express Menu (returns json file)
+// Blend Menu (returns json file)
 router.get('/blend-menu', function(req, res){
   res.sendfile('./menus/blend.json');
+});
+
+// Jury Box Menu (returns json file)
+router.get('/jurybox-menu', function(req, res){
+  res.sendfile('./menus/jurybox.json');
 });
 
 // Chill About (returns json file)
