@@ -16,7 +16,7 @@
           "name": "Ginsburg",
           "group": "Breakfast",
           "ingredients": [
-            "Choice of Wrap"
+            "Choice of Wrap",
             "Egg",
             "Tomato",
             "Mozzarella Cheese",
@@ -126,7 +126,7 @@
             "Marinara",
             "Mozzarella Cheese",
             "Choice of Either Ham, Pepperoni or Salami",
-            "Olive oil"
+            "Olive Oil"
           ],
           "price":"$5.99"
         },
@@ -140,7 +140,7 @@
             "Tomato",
             "Onion",
             "Olives",
-            "Italian dressing"
+            "Italian Dressing"
           ],
           "price":"$5.99"
         },
@@ -176,7 +176,7 @@
             "Bacon",
             "Lettuce",
             "Tomato",
-            "Mayo",
+            "Mayo"
           ],
           "price":"$5.99"
         },
@@ -188,7 +188,7 @@
             "Cheddar cheese",
             "Ranch",
             "Onion",
-            "BBQ Sauce",
+            "BBQ Sauce"
           ],
           "price":"$6.49"
         },
@@ -228,7 +228,7 @@
             "Parmesan Cheese",
             "Mozzarella Cheese",
             "Marinara",
-            "Basil",
+            "Basil"
           ],
           "price":"$6.49"
         },
