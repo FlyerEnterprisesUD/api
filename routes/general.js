@@ -18,6 +18,11 @@ router.get('/artstreet-menu', function(req, res){
   res.sendfile('./menus/artstreet.json');
 });
 
+// Blend Express Menu (returns json file)
+router.get('/blendexpress-menu', function(req, res){
+  res.sendfile('./menus/blendexpress.json');
+});
+
 // Chill About (returns json file)
 router.get('/chill-about', function(req, res){
   res.sendfile('./about/chill.json');

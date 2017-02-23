@@ -1,0 +1,314 @@
+{
+  "menu": {
+    "products": [
+      {
+        "name": "Tall",
+        "group": "Coffee",
+        "ingredients": [
+          "Hot",
+          "Iced"
+        ],
+        "price": "$1.75"
+      },
+      {
+        "name": "Grande",
+        "group": "Coffee",
+        "ingredients": [
+          "Hot",
+          "Iced"
+        ],
+        "price": "$2.00"
+      },
+      {
+        "name": "Venti",
+        "group": "Coffee",
+        "ingredients": [
+          "Hot",
+          "Iced"
+        ],
+        "price": "$2.25"
+      },
+      {
+        "name": "Latte",
+        "group": "Espresso",
+        "ingredients": [],
+        "price": "Tall - $3.00 / Grande - $3.50 / Venti - $4.00"
+      },
+      {
+        "name": "Cappuccino",
+        "group": "Espresso",
+        "ingredients": [],
+        "price": "Tall - $2.75 / Grande - $3.25 / Venti - $3.75"
+      },
+      {
+        "name": "Mocha",
+        "group": "Espresso",
+        "ingredients": [],
+        "price": "Tall - $3.25 / Grande - $3.75 / Venti - $4.00"
+      },
+      {
+        "name": "White Mocha",
+        "group": "Espresso",
+        "ingredients": [],
+        "price": "Tall - $3.50 / Grande - $4.00 / Venti - $4.50"
+      },
+      {
+        "name": "Chai Charger",
+        "group": "Espresso",
+        "ingredients": [],
+        "price": "Tall - $4.00 / Grande - $4.25 / Venti - $4.75"
+      },
+      {
+        "name": "Espresso Shot",
+        "group": "Espresso",
+        "ingredients": [],
+        "price": "Tall - $0.80 / Grande - $1.60 / Venti - $2.15"
+      },
+      {
+        "name": "Americano",
+        "group": "Espresso",
+        "ingredients": [],
+        "price": "Tall - $1.00 / Grande - $1.50 / Venti - $2.00"
+      },
+      {
+        "name": "White Cow",
+        "group": "Specialty Espresso",
+        "ingredients": [
+          "White Chocolate",
+          "Vanilla",
+          "",
+          "Hot",
+          "Iced",
+          "Frozen"
+        ],
+        "price": "Tall - $3.75 / Grande - $4.00 / Venti - $4.25"
+      },
+      {
+        "name": "Caramel Macchiato",
+        "group": "Specialty Espresso",
+        "ingredients": [
+          "Caramel",
+          "Vanilla",
+          "",
+          "Hot",
+          "Iced",
+          "Frozen"
+        ],
+        "price": "Tall - $3.75 / Grande - $4.00 / Venti - $4.25"
+      },
+      {
+        "name": "Milky Way",
+        "group": "Specialty Espresso",
+        "ingredients": [
+          "Chocolate",
+          "Caramel",
+          "",
+          "Hot",
+          "Iced",
+          "Frozen"
+        ],
+        "price": "Tall - $3.75 / Grande - $4.00 / Venti - $4.25"
+      },
+      {
+        "name": "Nutty Buddy",
+        "group": "Specialty Espresso",
+        "ingredients": [
+          "Chocolate",
+          "Hazelnut",
+          "",
+          "Hot",
+          "Iced",
+          "Frozen"
+        ],
+        "price": "Tall - $3.75 / Grande - $4.00 / Venti - $4.25"
+      },
+      {
+        "name": "Grasshopper",
+        "group": "Specialty Espresso",
+        "ingredients": [
+          "Chocolate",
+          "Mint",
+          "",
+          "Hot",
+          "Iced",
+          "Frozen"
+        ],
+        "price": "Tall - $3.75 / Grande - $4.00 / Venti - $4.25"
+      },
+      {
+        "name": "Nutty Irishman",
+        "group": "Specialty Espresso",
+        "ingredients": [
+          "Irish Creme",
+          "Hazelnut",
+          "",
+          "Hot",
+          "Iced",
+          "Frozen"
+        ],
+        "price": "Tall - $3.75 / Grande - $4.00 / Venti - $4.25"
+      },
+      {
+        "name": "French Vanilla",
+        "group": "Specialty Espresso",
+        "ingredients": [
+          "Vanilla",
+          "Hazelnut",
+          "",
+          "Hot",
+          "Iced",
+          "Frozen"
+        ],
+        "price": "Tall - $3.75 / Grande - $4.00 / Venti - $4.25"
+      },
+      {
+        "name": "Flavored Latte",
+        "group": "Specialty Espresso",
+        "ingredients": [
+          "Choose any of our flavored syrups",
+          "",
+          "Hot",
+          "Iced",
+          "Frozen"
+        ],
+        "price": "Tall - $3.75 / Grande - $4.00 / Venti - $4.25"
+      },
+      {
+        "name": "Chai Tea Latte",
+        "group": "Alternative",
+        "ingredients": [
+          "Hot",
+          "Iced",
+          "Frozen"
+        ],
+        "price": "Tall - $3.25 / Grande - $3.75 / Venti - $4.00"
+      },
+      {
+        "name": "Matcha",
+        "group": "Alternative",
+        "ingredients": [
+          "Hot",
+          "Iced",
+          "Frozen"
+        ],
+        "price": "Tall - $3.00 / Grande - $3.50 / Venti - $4.00"
+      },
+      {
+        "name": "Hot Chocolate",
+        "group": "Alternative",
+        "ingredients": [
+          "Hot",
+          "Iced",
+          "Frozen"
+        ],
+        "price": "Tall - $2.25 / Grande - $2.50 / Venti - $2.75"
+      },
+      {
+        "name": "White Hot Chocolate",
+        "group": "Alternative",
+        "ingredients": [
+          "Hot",
+          "Iced",
+          "Frozen"
+        ],
+        "price": "Tall - $2.50 / Grande - $2.75 / Venti - $3.00"
+      },
+      {
+        "name": "Hot Tea",
+        "group": "Alternative",
+        "ingredients": [],
+        "price": "$1.35"
+      },
+      {
+        "name": "Iced Tea",
+        "group": "Alternative",
+        "ingredients": [],
+        "price": "$2.50"
+      },
+      {
+        "name": "Juice",
+        "group": "Alternative",
+        "ingredients": [],
+        "price": "$2.75"
+      },
+      {
+        "name": "Gatorade",
+        "group": "Alternative",
+        "ingredients": [],
+        "price": "$2.00"
+      },
+      {
+        "name": "Soda",
+        "group": "Alternative",
+        "ingredients": [],
+        "price": "$1.50"
+      },
+      {
+        "name": "Water",
+        "group": "Alternative",
+        "ingredients": [],
+        "price": "$1.25"
+      },
+      {
+        "name": "Energy Drink",
+        "group": "Alternative",
+        "ingredients": [],
+        "price": "$3.05"
+      },
+      {
+        "name": "Mango",
+        "group": "Smoothies",
+        "ingredients": [],
+        "price": "$4.00"
+      },
+      {
+        "name": "Strawberry Banana",
+        "group": "Smoothies",
+        "ingredients": [],
+        "price": "$4.00"
+      },
+      {
+        "name": "Peach, Pear, Apricot",
+        "group": "Smoothies",
+        "ingredients": [],
+        "price": "$4.00"
+      },
+      {
+        "name": "Four Berry Blend",
+        "group": "Smoothies",
+        "ingredients": [],
+        "price": "$4.00"
+      },
+      {
+        "name": "Forbidden Fruit",
+        "group": "Smoothies",
+        "ingredients": [],
+        "price": "$4.00"
+      },
+      {
+        "name": "Cookies",
+        "group": "Treats",
+        "ingredients": [],
+        "price": "$1.50"
+      },
+      {
+        "name": "Bagels",
+        "group": "Treats",
+        "ingredients": [],
+        "price": "$1.50"
+      },
+      {
+        "name": "Muffins",
+        "group": "Treats",
+        "ingredients": [],
+        "price": "$2.00"
+      },
+      {
+        "name": "Mccabes Granola",
+        "group": "Treats",
+        "ingredients": [],
+        "price": "$2.25"
+      }
+    ]
+  }
+}
