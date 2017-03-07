@@ -13,7 +13,7 @@ router.get('/promotions-general', function(req, res){
   res.sendfile('./promotions/general.json');
 });
 
-// ---------------
+// --------------
 
 // The CHILL (returns json file)
 router.get('/chill', function(req, res){
