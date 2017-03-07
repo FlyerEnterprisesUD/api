@@ -310,5 +310,13 @@
         "price": "$2.25"
       }
     ]
+  },
+  "about" : {
+    "location": "Ground Floor of Roesch Library in the Learning Teaching Center",
+    "hours": [
+      "Monday - Thursday 8am - 12am",
+      "Friday 8am - 3:30pm",
+      "Sunday 5pm - 12am"
+    ]
   }
 }
