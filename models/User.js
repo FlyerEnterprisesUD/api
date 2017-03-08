@@ -13,7 +13,6 @@ var User = sequelize.define('user', {
   },
   email: {
     type: Sequelize.STRING,
-    unique: true,
     allowNull: false
   },
   password: {
@@ -24,15 +23,6 @@ var User = sequelize.define('user', {
     type: Sequelize.STRING,
     allowNull: false
   },
-  confirmed: {
-    type: Sequelize.STRING,
-    allowNull: false,
-    defaultValue: false
-  },
-  slug: {
-    type: Sequelize.STRING,
-    allowNull: false
-  }
 }, {
   tableName: 'users'
 });

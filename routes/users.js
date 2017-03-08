@@ -4,18 +4,7 @@ var router = express.Router();
 var bodyParser = require('body-parser');
 var bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
-var nodemailer = require('nodemailer');
-var generatePassword = require('password-generator');
 var User = require('../models/User.js');
-
-// create reusable transporter object using the default SMTP transport
-let transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-        user: 'patnaikaj@gmail.com',
-        pass: '601260ap'
-    }
-});
 
 // Generate Salt
 var salt = bcrypt.genSaltSync(10);
@@ -42,31 +31,13 @@ router.post('/create', function(req, res){
       });
     } else {
       //Creating new user if username doesn't already exist
-      var slug = generatePassword(10, false);
       var hash = bcrypt.hashSync(password, salt);
 
       var newUser = User.create({
         username: username,
         email: email,
         password: hash,
-        role: 'user',
-        slug: slug
-      });
-
-      // setup email data with unicode symbols
-      let mailOptions = {
-          from: '"Flyer Enterprises" <patnaikaj@gmail.com>', // sender address
-          to: email, // list of receivers
-          subject: 'Hello', // Subject line
-          html: '<p><a href="http://localhost:5000/user/confirm/' + slug + '">Click here to confirm email</a></p>'// html body
-      };
-
-      // send mail with defined transport object
-      transporter.sendMail(mailOptions, (error, info) => {
-          if (error) {
-              return console.log(error);
-          }
-          console.log('Message %s sent: %s', info.messageId, info.response);
+        role: 'user'
       });
 
       if(newUser) {
@@ -97,15 +68,6 @@ router.post('/login', function(req, res) {
   //Finding user in database
   User.findOne({ where: {username: username} }).then(function(user) {
     if(user) {
-      if(user.confirmed == 0) {
-        res.json({
-          response: {
-            success: false,
-            message: 'Please confirm email'
-          }
-        });
-      }
-
       var verified = bcrypt.compareSync(password, user.password);
       var tempUser = {
         username: user.username,
@@ -143,101 +105,6 @@ router.post('/login', function(req, res) {
       });
     }
 
-  });
-});
-
-router.post('/changepassword', function(req, res){
-  var username = req.body.username;
-  var oldPassword = req.body.oldPassword;
-  var newPassword = req.body.newPassword;
-
-  User.findOne({ where: {username: username} }).then(function(user) {
-    var verify = bcrypt.compareSync(oldPassword, user.password);
-
-    if(verify) {
-      var hash = bcrypt.hashSync(newPassword, salt);
-      User.update({
-        password: hash
-      }, {
-        where: { id: user.id }
-      });
-
-      res.json({
-        response: {
-          success: true
-        }
-      });
-    } else {
-      res.json({
-        response: {
-          success: false,
-          message: "Old Password did not match"
-        }
-      });
-    }
-  });
-});
-
-router.post('/resetpassword', function(req, res) {
-  var email = req.body.email;
-
-  User.findOne({ where: {email: email} }).then(function(user) {
-    if(user) {
-      var newPass = generatePassword(10, false);
-      var hash = bcrypt.hashSync(newPass, salt);
-
-      User.update({
-        password: hash
-      }, {
-        where: { id: user.id }
-      });
-
-      // setup email data with unicode symbols
-      let mailOptions = {
-          from: '"Flyer Enterprises" <patnaikaj@gmail.com>', // sender address
-          to: email, // list of receivers
-          subject: 'Hello', // Subject line
-          html: '<p>Hello new password is </p>' + newPass // html body
-      };
-
-      // send mail with defined transport object
-      transporter.sendMail(mailOptions, (error, info) => {
-          if (error) {
-              return console.log(error);
-          }
-          console.log('Message %s sent: %s', info.messageId, info.response);
-      });
-
-      res.json({
-        response: {
-          success: true
-        }
-      });
-    } else {
-      res.json({
-        response: {
-          success: false,
-          message: 'No user found'
-        }
-      });
-    }
-  });
-});
-
-router.get('/confirm/:slug', function(req, res){
-  var slug = req.params.slug;
-
-  User.findOne({ where: {slug: slug} }).then(function(user) {
-    User.update({
-      confirmed: true
-    }, {
-      where: { id: user.id }
-    });
-
-    res.writeHead(301,
-      {Location: 'http://flyerenterprises.com/'}
-    );
-    res.end();
   });
 });
 
