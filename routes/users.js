@@ -6,7 +6,7 @@ var bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
 var generatePassword = require('password-generator');
 var User = require('../models/User.js');
-var sendgrid = require("sendgrid");
+var sg = require('sendgrid')('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');
 
 // Generate Salt
 var salt = bcrypt.genSaltSync(10);
@@ -42,6 +42,39 @@ router.post('/create', function(req, res){
         password: hash,
         role: 'user',
         slug: slug
+      });
+
+      var request = sg.emptyRequest({
+        method: 'POST',
+        path: '/v3/mail/send',
+        body: {
+          personalizations: [
+            {
+              to: [
+                {
+                  email: email,
+                },
+              ],
+              subject: 'Email Confirmation',
+            },
+          ],
+          from: {
+            email: 'no-reply@flyerenterprises.com',
+          },
+          content: [
+            {
+              type: 'text/plain',
+              value: 'https://flyerenterprisesmobileapp.herokuapp.com/user/confirm/' + slug,
+            },
+          ],
+        },
+      });
+
+      //With callback
+      sg.API(request, function(error, response) {
+        if (error) {
+          console.log('Error response received');
+        }
       });
 
       if(newUser) {
@@ -167,7 +200,38 @@ router.post('/resetpassword', function(req, res) {
         where: { id: user.id }
       });
 
-      //HAVE TO FIND A NEW WAY FOR EMAIL
+      var request = sg.emptyRequest({
+        method: 'POST',
+        path: '/v3/mail/send',
+        body: {
+          personalizations: [
+            {
+              to: [
+                {
+                  email: email,
+                },
+              ],
+              subject: 'Reset Password',
+            },
+          ],
+          from: {
+            email: 'no-reply@flyerenterprises.com',
+          },
+          content: [
+            {
+              type: 'text/plain',
+              value: 'Your new password is ' + newPass,
+            },
+          ],
+        },
+      });
+
+      //With callback
+      sg.API(request, function(error, response) {
+        if (error) {
+          console.log('Error response received');
+        }
+      });
 
       res.json({
         response: {
