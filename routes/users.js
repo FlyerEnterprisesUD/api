@@ -1,4 +1,3 @@
-"use strict";
 // Requires
 var express = require('express');
 var router = express.Router();
@@ -10,7 +9,7 @@ var generatePassword = require('password-generator');
 var User = require('../models/User.js');
 
 // create reusable transporter object using the default SMTP transport
-let transporter = nodemailer.createTransport({
+var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: 'ajaytest12345@gmail.com',
