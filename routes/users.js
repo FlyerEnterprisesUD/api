@@ -12,8 +12,8 @@ var User = require('../models/User.js');
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'patnaikaj@gmail.com',
-        pass: '601260ap'
+        user: 'ajaytest12345@gmail.com',
+        pass: 'ajay-test'
     }
 });
 
