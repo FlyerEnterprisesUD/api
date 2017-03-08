@@ -9,6 +9,7 @@ var generatePassword = require('password-generator');
 var User = require('../models/User.js');
 
 // create reusable transporter object using the default SMTP transport
+/*
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -16,6 +17,7 @@ var transporter = nodemailer.createTransport({
         pass: 'ajay-test'
     }
 });
+*/
 
 // Generate Salt
 var salt = bcrypt.genSaltSync(10);
@@ -53,6 +55,7 @@ router.post('/create', function(req, res){
         slug: slug
       });
 
+      /*
       // setup email data with unicode symbols
       var mailOptions = {
           from: '"Flyer Enterprises" <patnaikaj@gmail.com>', // sender address
@@ -68,6 +71,7 @@ router.post('/create', function(req, res){
           }
           console.log('Message %s sent: %s', info.messageId, info.response);
       });
+      */
 
       if(newUser) {
         res.json({
@@ -192,6 +196,7 @@ router.post('/resetpassword', function(req, res) {
         where: { id: user.id }
       });
 
+      /*
       // setup email data with unicode symbols
       var mailOptions = {
           from: '"Flyer Enterprises" <patnaikaj@gmail.com>', // sender address
@@ -207,6 +212,7 @@ router.post('/resetpassword', function(req, res) {
           }
           console.log('Message %s sent: %s', info.messageId, info.response);
       });
+      */
 
       res.json({
         response: {
