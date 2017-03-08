@@ -4,20 +4,8 @@ var router = express.Router();
 var bodyParser = require('body-parser');
 var bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
-//var nodemailer = require('nodemailer');
 var generatePassword = require('password-generator');
 var User = require('../models/User.js');
-
-// create reusable transporter object using the default SMTP transport
-/*
-var transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-        user: 'ajaytest12345@gmail.com',
-        pass: 'ajay-test'
-    }
-});
-*/
 
 // Generate Salt
 var salt = bcrypt.genSaltSync(10);
@@ -55,23 +43,7 @@ router.post('/create', function(req, res){
         slug: slug
       });
 
-      /*
-      // setup email data with unicode symbols
-      var mailOptions = {
-          from: '"Flyer Enterprises" <patnaikaj@gmail.com>', // sender address
-          to: email, // list of receivers
-          subject: 'Hello', // Subject line
-          html: '<p><a href="http://localhost:5000/user/confirm/' + slug + '">Click here to confirm email</a></p>'// html body
-      };
-
-      // send mail with defined transport object
-      transporter.sendMail(mailOptions, (error, info) => {
-          if (error) {
-              return console.log(error);
-          }
-          console.log('Message %s sent: %s', info.messageId, info.response);
-      });
-      */
+      //HAVE TO FIND A NEW WAY FOR EMAIL
 
       if(newUser) {
         res.json({
@@ -196,23 +168,7 @@ router.post('/resetpassword', function(req, res) {
         where: { id: user.id }
       });
 
-      /*
-      // setup email data with unicode symbols
-      var mailOptions = {
-          from: '"Flyer Enterprises" <patnaikaj@gmail.com>', // sender address
-          to: email, // list of receivers
-          subject: 'Hello', // Subject line
-          html: '<p>Hello new password is </p>' + newPass // html body
-      };
-
-      // send mail with defined transport object
-      transporter.sendMail(mailOptions, (error, info) => {
-          if (error) {
-              return console.log(error);
-          }
-          console.log('Message %s sent: %s', info.messageId, info.response);
-      });
-      */
+      //HAVE TO FIND A NEW WAY FOR EMAIL
 
       res.json({
         response: {
@@ -244,6 +200,22 @@ router.get('/confirm/:slug', function(req, res){
       {Location: 'http://flyerenterprises.com/'}
     );
     res.end();
+  });
+});
+
+router.get('/test', function(req, res){
+  User.findOne({ where: {id: '2'} }).then(function(user) {
+    User.update({
+      confirmed: true
+    }, {
+      where: { id: user.id }
+    });
+
+    res.writeHead(301,
+      {Location: 'http://flyerenterprises.com/'}
+    );
+    res.end();
+
   });
 });
 
