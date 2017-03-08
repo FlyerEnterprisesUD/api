@@ -6,6 +6,7 @@ var bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
 var generatePassword = require('password-generator');
 var User = require('../models/User.js');
+var sendgrid = require("sendgrid");
 
 // Generate Salt
 var salt = bcrypt.genSaltSync(10);
@@ -42,8 +43,6 @@ router.post('/create', function(req, res){
         role: 'user',
         slug: slug
       });
-
-      //HAVE TO FIND A NEW WAY FOR EMAIL
 
       if(newUser) {
         res.json({
