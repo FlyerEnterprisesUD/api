@@ -4,7 +4,7 @@ var router = express.Router();
 var bodyParser = require('body-parser');
 var bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
-var nodemailer = require('nodemailer');
+//var nodemailer = require('nodemailer');
 var generatePassword = require('password-generator');
 var User = require('../models/User.js');
 
