@@ -32,6 +32,14 @@ var User = sequelize.define('user', {
   slug: {
     type: Sequelize.STRING,
     allowNull: false
+  },
+  name: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
+  year: {
+    type: Sequelize.STRING,
+    allowNull: true
   }
 }, {
   tableName: 'users'

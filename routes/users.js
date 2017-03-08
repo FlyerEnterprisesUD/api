@@ -119,7 +119,9 @@ router.post('/login', function(req, res) {
         username: user.username,
         email: user.email,
         password: user.password,
-        role: user.role
+        role: user.role,
+        name: user.name,
+        year: user.year
       }
 
       //Creating token
@@ -263,6 +265,27 @@ router.get('/confirm/:slug', function(req, res){
       {Location: 'http://flyerenterprises.com/'}
     );
     res.end();
+  });
+});
+
+router.post('/update', function(req, res){
+  var username = req.body.username;
+  var name = req.body.name;
+  var year = req.body.year;
+
+  User.findOne({ where: {username: username} }).then(function(user) {
+      User.update({
+        name: name,
+        year: year
+      }, {
+        where: { id: user.id }
+      });
+
+      res.json({
+        response: {
+          success: true
+        }
+      });
   });
 });
 
