@@ -9,7 +9,7 @@ router.get('/', function(req, res){
 });
 
 // Returns general promotions from json file
-router.get('/promotions', function(req, res){
+router.get('/promotions-general', function(req, res){
   res.sendfile('./promotions/general.json');
 });
 
