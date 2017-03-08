@@ -54,7 +54,7 @@ router.post('/create', function(req, res){
       });
 
       // setup email data with unicode symbols
-      let mailOptions = {
+      var mailOptions = {
           from: '"Flyer Enterprises" <patnaikaj@gmail.com>', // sender address
           to: email, // list of receivers
           subject: 'Hello', // Subject line
@@ -193,7 +193,7 @@ router.post('/resetpassword', function(req, res) {
       });
 
       // setup email data with unicode symbols
-      let mailOptions = {
+      var mailOptions = {
           from: '"Flyer Enterprises" <patnaikaj@gmail.com>', // sender address
           to: email, // list of receivers
           subject: 'Hello', // Subject line
