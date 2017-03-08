@@ -211,10 +211,12 @@ router.get('/test', function(req, res){
       where: { id: user.id }
     });
 
-    res.writeHead(301,
-      {Location: 'http://flyerenterprises.com/'}
-    );
-    res.end();
+    res.json({
+      response: {
+        success: true,
+        message: 'yea'
+      }
+    });
 
   });
 });
