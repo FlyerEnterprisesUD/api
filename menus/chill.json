@@ -185,12 +185,5 @@
         "price": "Small - $3.50 / Large - $4.75"
       }
     ]
-  },
-  "about" : {
-    "location": "Recplex",
-    "hours": [
-      "Sunday - Thursday 11am - 11pm",
-      "Friday - Saturday 11am - 9pm"
-    ]
   }
 }

@@ -8,6 +8,7 @@ router.get('/', function(req, res){
   res.send('API for FE');
 });
 
+<<<<<<< HEAD
 // Returns general promotions from json file
 router.get('/promotions', function(req, res){
   res.sendfile('./promotions/general.json');
@@ -16,36 +17,41 @@ router.get('/promotions', function(req, res){
 // The CHILL (returns json file)
 router.get('/chill', function(req, res){
   res.sendfile('./info/chill.json');
+=======
+// Chill Menu (returns json file)
+router.get('/chill-menu', function(req, res){
+  res.sendfile('./menus/chill.json');
 });
 
-// The Jury Box (returns json file)
-router.get('/jurybox', function(req, res){
-  res.sendfile('./info/jurybox.json');
+// Art Street Menu (returns json file)
+router.get('/artstreet-menu', function(req, res){
+  res.sendfile('./menus/artstreet.json');
+>>>>>>> parent of 58cd06f... Merge branch 'ajay'
 });
 
-// The Blend (returns json file)
-router.get('/blend', function(req, res){
-  res.sendfile('./info/blend.json');
+// Blend Express Menu (returns json file)
+router.get('/blendexpress-menu', function(req, res){
+  res.sendfile('./menus/blendexpress.json');
 });
 
-// The Blend (returns json file)
-router.get('/blendexpress', function(req, res){
-  res.sendfile('./info/blendexpress.json');
+// Blend Menu (returns json file)
+router.get('/blend-menu', function(req, res){
+  res.sendfile('./menus/blend.json');
 });
 
-// The Blend (returns json file)
-router.get('/artstreet', function(req, res){
-  res.sendfile('./info/artstreet.json');
+// Jury Box Menu (returns json file)
+router.get('/jurybox-menu', function(req, res){
+  res.sendfile('./menus/jurybox.json');
 });
 
-// The Blend (returns json file)
-router.get('/stuslanding', function(req, res){
-  res.sendfile('./info/stuslanding.json');
+// Chill About (returns json file)
+router.get('/chill-about', function(req, res){
+  res.sendfile('./about/chill.json');
 });
 
-// The Blend (returns json file)
-router.get('/galley', function(req, res){
-  res.sendfile('./info/galley.json');
+// Returns general promotions from json file
+router.get('/promotions-general', function(req, res){
+  res.sendfile('./promotions/general.json');
 });
 
 module.exports = router;

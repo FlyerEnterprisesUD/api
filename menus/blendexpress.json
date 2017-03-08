@@ -310,12 +310,5 @@
         "price": "$2.25"
       }
     ]
-  },
-  "about" : {
-    "location": "Miriam Hall Atrium",
-    "hours": [
-      "Monday - Thursday 7:45am - 8pm",
-      "Friday 8am - 3:30pm"
-    ]
   }
 }

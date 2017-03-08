@@ -275,12 +275,5 @@
           "price": "$6.49"
         }
       ]
-    },
-    "about" : {
-      "location": "Ground Floor (Basement) of Keller Hall: University of Dayton Law School",
-      "hours": [
-        "Monday - Thursday 8am - 7pm",
-        "Friday 8am - 3pm"
-      ]
     }
 }
