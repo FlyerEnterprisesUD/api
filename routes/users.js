@@ -6,7 +6,7 @@ var bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
 var generatePassword = require('password-generator');
 var User = require('../models/User.js');
-var sg = require('sendgrid')('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');
+var sg = require('sendgrid')('');
 
 // Generate Salt
 var salt = bcrypt.genSaltSync(10);
