@@ -49,14 +49,14 @@ router.post('/verify', function(req, res) {
 router.post('/punch', function(req, res){
   var userId = req.body.userId;
   var cardId = req.body.cardId;
-  var division = req.body.division;
 
   UserCard.findOne({ where: {userId: userId, cardId: cardId} }).then(function(usercard) {
     if(usercard) {
       var newPoints = usercard.points + 1;
 
       UserCard.update({
-        points: newPoints
+        points: newPoints,
+        lastPunchDate: Date()
       }, {
         where: { id: usercard.id }
       });
@@ -66,32 +66,30 @@ router.post('/punch', function(req, res){
           success: true
         }
       });
-    } else {
+    }
+  });
+});
 
-      var newUserCard = UserCard.create({
-        userId: userId,
-        cardId: cardId,
-        points: 1,
-        lastPunchDate: Date(),
-        completed: 0,
-        division: division,
-        favorite: 0
+router.post('/redeem', function(req, res){
+  var userId = req.body.userId;
+  var cardId = req.body.cardId;
+
+  UserCard.findOne({ where: {userId: userId, cardId: cardId} }).then(function(usercard) {
+    if(usercard) {
+      var completed = usercard.completed + 1;
+
+      UserCard.update({
+        points: 0,
+        completed: completed
+      }, {
+        where: { id: usercard.id }
       });
 
-      if(newUserCard) {
-        res.json({
-          response: {
-            success: true
-          }
-        });
-      } else {
-        res.json({
-          response: {
-            success: false,
-            message: 'Something messed up. Try again later'
-          }
-        });
-      }
+      res.json({
+        response: {
+          success: true
+        }
+      });
     }
   });
 });
@@ -111,9 +109,55 @@ router.post('/getcards', function(req, res){
   });
 });
 
+router.post('/favorite', function(req, res){
+  var userId = req.body.userId;
+  var cardId = req.body.cardId;
+
+  UserCard.findOne({ where: {userId: userId, cardId: cardId} }).then(function(usercard) {
+    if(usercard) {
+
+      var favorite;
+      if(usercard.favorite == 0) {
+        favorite = 1;
+      } else {
+        favorite = 0;
+      }
+
+      UserCard.update({
+        favorite: favorite
+      }, {
+        where: { id: usercard.id }
+      });
+
+      res.json({
+        response: {
+          success: true
+        }
+      });
+    }
+  });
+});
+
+router.post('/getfavorites', function(req, res){
+  var userId = req.body.userId;
+
+  UserCard.findAll({ include: [{ model: Card }] }).then(function(usercards) {
+    if(usercards) {
+      res.json({
+        response: {
+          success: true,
+          cards: usercards
+        }
+      });
+    }
+  });
+
+});
+
 router.post('/getcard', function(req, res){
   var cardId = req.body.cardId;
   var userId = req.body.userId;
+  var division = req.body.division;
 
   UserCard.findOne({ where: {userId: userId, cardId: cardId} }).then(function(usercard) {
     if(usercard) {
@@ -124,14 +168,33 @@ router.post('/getcard', function(req, res){
         }
       });
     } else {
-      res.json({
-        response: {
-          success: false
-        }
+      var newUserCard = UserCard.create({
+        userId: userId,
+        cardId: cardId,
+        points: 0,
+        lastPunchDate: null,
+        completed: 0,
+        division: division,
+        favorite: 0
       });
+
+      if(newUserCard) {
+        res.json({
+          response: {
+            success: true,
+            card: newUserCard
+          }
+        });
+      } else {
+        res.json({
+          response: {
+            success: false,
+            message: 'Something messed up. Try again later'
+          }
+        });
+      }
     }
   });
-
 });
 
 module.exports = router;

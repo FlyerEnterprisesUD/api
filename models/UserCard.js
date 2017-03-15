@@ -4,6 +4,9 @@ var sequelize = new Sequelize('mysql://b6604c4169e159:8d28475f@us-cdbr-iron-east
   pool: { maxIdleTime: 500, maxConnections: 5, minConnections: 0}
 });
 
+var Card = require('./Card');
+var User = require('./User');
+
 //Creating user table/model
 var UserCard = sequelize.define('usercard', {
   userId: {
@@ -20,7 +23,7 @@ var UserCard = sequelize.define('usercard', {
   },
   lastPunchDate: {
     type: Sequelize.DATE,
-    allowNull: false
+    allowNull: true
   },
   completed: {
     type: Sequelize.INTEGER,
@@ -37,6 +40,10 @@ var UserCard = sequelize.define('usercard', {
 }, {
   tableName: 'usercards'
 });
+
+Card.hasMany(UserCard);
+UserCard.belongsTo(Card);
+//User.hasMany(UserCard);
 
 sequelize.sync();
 
