@@ -117,6 +117,7 @@ router.post('/login', function(req, res) {
 
       var verified = bcrypt.compareSync(password, user.password);
       var tempUser = {
+        id: user.id,
         username: user.username,
         email: user.email,
         password: user.password,
@@ -287,24 +288,6 @@ router.post('/update', function(req, res){
           success: true
         }
       });
-  });
-});
-
-router.get('/test', function(req, res){
-  User.findOne({ where: {id: '2'} }).then(function(user) {
-    User.update({
-      confirmed: true
-    }, {
-      where: { id: user.id }
-    });
-
-    res.json({
-      response: {
-        success: true,
-        message: 'yea'
-      }
-    });
-
   });
 });
 
