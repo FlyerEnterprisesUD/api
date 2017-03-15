@@ -141,7 +141,7 @@ router.post('/favorite', function(req, res){
 router.post('/getfavorites', function(req, res){
   var userId = req.body.userId;
 
-  UserCard.findAll({ include: [{ model: Card }] }).then(function(usercards) {
+  UserCard.findAll({ where: {favorite: 1, userId: userId}, include: [{ model: Card }] }).then(function(usercards) {
     if(usercards) {
       res.json({
         response: {
