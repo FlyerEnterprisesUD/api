@@ -3,6 +3,8 @@ var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
 
+var Promotion = require('../models/Promotion');
+
 // Main route
 router.get('/', function(req, res){
   res.send('API for FE');
@@ -46,6 +48,21 @@ router.get('/stuslanding', function(req, res){
 // The Blend (returns json file)
 router.get('/galley', function(req, res){
   res.sendfile('./info/galley.json');
+});
+
+router.post('/getpromotions', function(req, res){
+  var division = req.body.division;
+
+  Promotion.findAll({ where: {approved: true, ready: true, division: division}, order: [['createdAt', 'DESC']] }).then(function(promos) {
+    if(promos){
+      res.json({
+        response: {
+          success: true,
+          promotions: promos
+        }
+      });
+    }
+  });
 });
 
 module.exports = router;

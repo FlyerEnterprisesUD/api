@@ -6,6 +6,7 @@ var jwt = require('jsonwebtoken');
 var User = require('../models/User');
 var UserCard = require('../models/UserCard');
 var Card = require('../models/Card');
+var Promotion = require('../models/Promotion');
 
 // Make sure that the user is authenticated
 router.use(function(req, res, next){
@@ -195,6 +196,108 @@ router.post('/getcard', function(req, res){
       }
     }
   });
+});
+
+router.post('/getapproves', function(req, res){
+  Promotion.findAll({ where: {approved: false}, order: [['createdAt', 'DESC']] }).then(function(promos) {
+    if(promos){
+      res.json({
+        response: {
+          success: true,
+          promotions: promos
+        }
+      });
+    }
+  });
+});
+
+router.post('/approve', function(req, res){
+  var id = req.body.id;
+  var title = req.body.title;
+  var division = req.body.division;
+  var body = req.body.body;
+  var time = req.body.time;
+
+  Promotion.findOne({ where: {id: id} }).then(function(promotion) {
+    if(promotion) {
+      Promotion.update({
+        approved: true,
+        title: title,
+        division: division,
+        body: body,
+        time: time,
+        ready: true
+      }, {
+        where: { id: promotion.id }
+      });
+
+      res.json({
+        response: {
+          success: true
+        }
+      });
+    }
+  });
+});
+
+router.post('/deny', function(req, res){
+  var id = req.body.id;
+
+  Promotion.findOne({ where: {id: id} }).then(function(promotion) {
+    if(promotion) {
+      Promotion.destroy({
+        where: { id: promotion.id }
+      });
+
+      res.json({
+        response: {
+          success: true
+        }
+      });
+    }
+  });
+});
+
+router.post('/submit', function(req, res){
+  var title = req.body.title;
+  var division = req.body.division;
+  var submitter = req.body.submitter;
+  var time = req.body.time;
+  var body = req.body.body;
+
+  console.log(time);
+
+  var ready = false;
+  if(time == "now") {
+    time = Date();
+    ready = true;
+  }
+
+  var newPromotion = Promotion.create({
+    title: title,
+    division: division,
+    submitter: submitter,
+    body: body,
+    time: time,
+    approved: false,
+    ready: ready
+  });
+
+  if(newPromotion) {
+    res.json({
+      response: {
+        success: true
+      }
+    });
+  } else {
+    res.json({
+      response: {
+        success: false,
+        message: 'Something messed up. Try again later'
+      }
+    });
+  }
+
 });
 
 module.exports = router;
