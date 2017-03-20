@@ -226,8 +226,7 @@ router.post('/approve', function(req, res){
         title: title,
         division: division,
         body: body,
-        time: time,
-        ready: true
+        time: time
       }, {
         where: { id: promotion.id }
       });
