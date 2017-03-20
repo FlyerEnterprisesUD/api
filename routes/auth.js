@@ -7,6 +7,7 @@ var User = require('../models/User');
 var UserCard = require('../models/UserCard');
 var Card = require('../models/Card');
 var Promotion = require('../models/Promotion');
+var CronJob = require('cron').CronJob;
 
 // Make sure that the user is authenticated
 router.use(function(req, res, next){
@@ -265,8 +266,6 @@ router.post('/submit', function(req, res){
   var time = req.body.time;
   var body = req.body.body;
 
-  console.log(time);
-
   var ready = false;
   if(time == "now") {
     time = Date();
@@ -281,6 +280,16 @@ router.post('/submit', function(req, res){
     time: time,
     approved: false,
     ready: ready
+  }).then(function(promo){
+    if(ready == false) {
+      new CronJob(new Date(time), function() {
+        Promotion.update({
+          ready: true
+        }, {
+          where: { id: promo.id }
+        });
+      }, null, true, 'America/Los_Angeles');
+    }
   });
 
   if(newPromotion) {
