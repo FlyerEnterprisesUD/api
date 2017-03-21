@@ -53,7 +53,7 @@ router.get('/galley', function(req, res){
 router.post('/getpromotions', function(req, res){
   var division = req.body.division;
 
-  Promotion.findAll({ where: {approved: true, ready: true, division: division}, order: [['createdAt', 'DESC']] }).then(function(promos) {
+  Promotion.findAll({ where: {approved: true, ready: true, division: division}, order: [['createdAt', 'DESC']], limit: 25 }).then(function(promos) {
     if(promos){
       res.json({
         response: {
