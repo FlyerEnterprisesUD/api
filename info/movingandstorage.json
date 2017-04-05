@@ -1,0 +1,105 @@
+{
+  "about" : [
+    {
+    "info": "As one of the newer divisions Flyer Enterprises, Storage and Moving
+    was established to solve the storage issues that students face during their
+    summer months away from UD. In April of 2011, FE Storage launched its pilot
+    program for Summer 2011, storing the belongings of the first 100 customers
+    of this unique service. That pilot program offered students the option to
+    purchase two different size boxes, either 3 cubic feet or 4.5 cubic feet.
+    In addition to belongings stored in boxes, individuals also have the option
+    to purchase storage space for items such as mini- fridges, futons, bean bag
+    chairs, couches, tables, rugs, and other large items. Please visit our
+    storefront here to view price listings. Feel free to direct any inquiries
+    to FEStorage@flyerenterprises.com or (937)-687-8678",
+    }
+  ],
+  "ProductList" : [
+    {
+      "name": "Large FE Box",
+      "group": "Individual Boxes",
+      "price": "$30"
+    },
+    {
+      "name": "Medium FE Box",
+      "group": "Individual Boxes",
+      "price": "$25"
+    },
+    {
+      "name": "Non-FE Box or Tote",
+      "group": "Individual Boxes",
+      "price": "$40"
+    },
+    {
+      "name": "Unlimited Storage Pack",
+      "group": "Package Deals",
+      "ingredients": [
+        "A package deal for the majority of your room. This package will fit the student who needs to store the majority of their belongings over the summer. Includes 4 large and 4 medium boxes."
+      ],
+      "price": "$200"
+    },
+    {
+      "name": "Gold Storage Pack",
+      "group": "Package Deals",
+      "ingredients": [
+        "This package will fit the student who needs to store most but not all of their belongings over the summer. Includes 3 large and 3 medium boxes."
+      ],
+      "price": "$150"
+    },
+    {
+      "name": "Silver Storage Pack",
+      "group": "Package Deals",
+      "ingredients": [
+        "This package will fit the student who needs to store a few but not all of their belongings over the summer. Includes 2 large and 2 medium boxes."
+      ],
+      "price": "$100"
+    },
+
+
+  ],
+  "How" : [
+    {"name": "Need a description specific for the app."}
+  ],
+  "FAQ" : [
+    {
+    "question" : "Q: Can I pickup my stuff before UD move in weekend?",
+    "answer" : "A: Yes, but you have to purchase the early move in option on the website. If you don’t purchase the option, we can not move your stuff in early."
+    },
+    {
+    "question" : "Q: What if I have an item that is not an option on the website?",
+    "answer" : "A: Call us! We are always open to any item that you might need stored, so we will work with you to figure it out."
+    },
+    {
+    "question" : "Q: Do the prices on the website include storage pickup and storage over the summer?",
+    "answer" : "A: Yes, the prices online include the items being stored, pickup from your dorm/apartment, and storage over the summer."
+    },
+    {
+    "question" : "Q: Do you provide the storage units?",
+    "answer" : "A: All of our storage options are provided by Mayberry’s Van & Storage Inc. and individually priced based upon what you would like to store."
+    },
+    {
+    "question" : "Q: Where are my belongings being stored?",
+    "answer" : "A: They are stored at Mayberry Van & Storage Inc. This is the official storage service of the University of Dayton."
+    },
+    {
+    "question" : "Q: What forms of payment are accepted?",
+    "answer"  : "A: Only online credit card payments and online checks."
+    },
+    {
+    "question" : "Q: Do you provide pick-up services this year?",
+    "answer" : "A:  We are offering pickup and drop off services to the student neighborhoods for a $20 fee."
+    },
+    {
+    "question" : "Q: What if I need to get my items out early before the official return date?",
+    "answer" : "A: There is an early-out option, but you must notify an FE Storage representative before you store your belongings."
+    },
+    {
+    "question" : "Q: What happens if my belongings get damaged or lost?",
+    "answer" : "A: We handle every issue on a case-by-case basis, but we will do our best to make up for any issues that arise. Also, upon transferring your items to us you sign an insurance contract that is handled between FE Storage and Mayberry Van & Storage Inc."
+    },
+    {
+    "question" : "Q: Can I donate items I no longer need or want?",
+    "answer" : "A: There are various locations around the University of Dayton campus that accept donations. Contact Housing & Residence Life for more information."
+    }
+  ]
+}
